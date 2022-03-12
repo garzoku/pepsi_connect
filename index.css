@@ -1,0 +1,26 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.meta {
+    display: flex;
+}
+h1 {
+    margin-right:24px;
+}
+nav ul{
+
+    display: flex;
+    justify-content: space-between;
+}
+   
+li + li {
+    margin-left: 16px;
+}
+
+a {
+    text-decoration: none;
+}
