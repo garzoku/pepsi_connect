@@ -1,29 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+body {
+    color: #fff;
+    font-weight: 400;
+    background-color: black;
+    font-family: 'Archivo', sans-serif;
+}
 
 
 header {
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 24px 36px;
     background-color: hsl(209, 100%, 38%);
-    color: white;
 }
 .meta {
     display: flex;
+    align-items: center;
 }
 h1 {
-    margin-right:24px;
-}
-nav ul{
+    margin-right:36px;
+    font-size: 26px;
 
+}
+
+nav ul{
     display: flex;
-    justify-content: space-between;
 }
    
 li + li {
     margin-left: 16px;
 }
 
+.action {
+    display:flex;
+    align-items: center;
+}
+
+.action a + a {
+    margin-left:24px;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.heroimage {
+    padding-top: 36px;
+    width: 700px;
+}
+.hero-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h2 {
+    margin-top: 24px;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+.hero a {
+    margin-top: 24px;
+    background-color: hsl(209, 100%, 38%);
+    padding: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+
+
