@@ -226,13 +226,17 @@ h2 {
    }
 }
 
-.grid-container > div > * {
-    margin: 18px 0;
+.grid-container > div  * {
+    margin: 20px 0;
 }
 
 .feature {
     font-weight: 700;
     font-size: 20px;
+}
+
+.grid-container  p {
+    margin-bottom: 30px;
 }
 
 .grid-container  a {
