@@ -10,9 +10,16 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 12px 36px;
+    padding: 12px 48px;
     background-color: hsl(209, 100%, 38%);
 }
+@media only screen and (max-width: 700px) {
+    header {
+      padding: 12px 24px;
+    }
+}
+
+
 .meta {
     display: flex;
     align-items: center;
@@ -21,30 +28,68 @@ header {
     margin-right:48px;
     width: 52px;
 }
+@media only screen and (max-width: 700px) {
+    .logo {
+      margin-right: 16px;
+    }
+}
 
 .meta>a:hover {
      transform: scale(1.1);
 }
 nav ul{
     display: flex;
-}  
+}
+@media only screen and (max-width: 700px) {
+    nav ul {
+      flex-direction: column;
+    }
+}
+
 li + li {
     margin-left: 16px;
+}
+@media only screen and (max-width: 700px) {
+    li + li {
+      margin-left:0;
+      margin-top:4px;
+    }
 }
 .action {
     display:flex;
     flex-wrap: nowrap;
     align-items: center;
 }
+@media only screen and (max-width: 700px) {
+    .action {
+      flex-direction: column;
+    }
+}
+
 .action a + a {
     margin-left:12px;
 }
+@media only screen and (max-width: 700px) {
+    .action a + a {
+      margin-left: auto;
+      margin-top: 6px;
+    }
+}
+
 .action a {
+    display:flex;
+    width: 50px;
     padding: 12px 18px;
     border-radius: 12px;
     background-color: #ffffff;
     color:hsl(209, 100%, 38%);
     font-weight: 700;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .action a {
+        padding: 8px 12px;
+    }
 }
 a {
     text-decoration: none;
@@ -64,17 +109,30 @@ a:hover {
     padding-top: 36px;
     width: 700px;
 }
+@media only screen and (max-width: 700px) {
+    .heroimage {
+      width: 340px;
+    }
+}
 .hero-action {
     margin-top: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h2 {
+
+h1 {
     margin-top: 24px;
     font-weight: 800;
     font-size: xx-large;
 }
+@media only screen and (max-width: 700px) {
+    h1 {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+}
+
 .hero a {
     margin-top: 24px;
     background-color: hsl(209, 100%, 38%);
@@ -83,6 +141,12 @@ h2 {
     border-radius: 12px;
     font-size: 16px;
 }
+@media only screen and (max-width: 700px) {
+    .hero a {
+        margin-top: 12px;
+        font-size: 16px;
+   }
+}
 main {
     background: linear-gradient(hsl(209, 100%, 38%), hsl(209, 100%, 10%));
 }
@@ -90,45 +154,94 @@ main {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 3;
-    grid-gap: 25px;
-    padding:36px 36px;
+    column-gap: 250px;
+    row-gap: 50px;
+    padding:48px 48px;
     font-weight: 500;
     font-size: 16px;
-
 }
-h3 {
-    margin-top: 1em;
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1;
+        grid-template-rows: 5;
+        padding: 12px 24px;
+   }
+}
+
+h2 {
     font-size: 28px;
+    font-weight: 700;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
+}
+@media only screen and (max-width: 700px) {
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+   }
 }
 .feature-1 {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
 }
+@media only screen and (max-width: 700px) {
+    .feature-1 {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+   }
+}
+
 .feature-2 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
 }
+@media only screen and (max-width: 700px) {
+    .feature-2 {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+   }
+}
+
 .feature-3 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 }
+@media only screen and (max-width: 700px) {
+    .feature-3 {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+   }
+}
+
 .feature-4 {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
 }
+@media only screen and (max-width: 700px) {
+    .feature-4 {
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+   }
+}
+
 .grid-container > div > * {
-    padding: 24px 0;
+    margin: 18px 0;
 }
 
 .feature {
     font-weight: 700;
+    font-size: 20px;
 }
 
 .grid-container  a {
-    padding: 12px 18px;
+    align-items: center;
+    padding: 10px 14px;
     border-radius: 12px;
     background-color: #ffffff;
     color: hsl(209, 100%, 38%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
 }
