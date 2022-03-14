@@ -105,6 +105,7 @@ a:hover {
 .heroimage {
     width: 100%;
     height: auto;
+    filter: brightness(50%);
 }
 .hero-action {
     display: flex;
