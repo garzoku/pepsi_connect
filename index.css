@@ -105,14 +105,14 @@ a:hover {
 .heroimage {
     width: 100%;
     height: auto;
-    filter: brightness(50%);
+    filter: brightness(40%);
 }
 .hero-action {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top:70%;
+    top:75%;
     width: 100%;
 }
 @media only screen and (max-width: 700px) {
