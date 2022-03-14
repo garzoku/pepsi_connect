@@ -95,6 +95,7 @@ a:hover {
 .hero {
     display: flex;
     position: relative;
+    background-color: black;
 }  
 .heroimage {
     width: 100%;
