@@ -95,12 +95,11 @@ a:hover {
 .hero {
     display: flex;
     position: relative;
-    background-color: black;
 }  
 .heroimage {
     width: 100%;
     height: auto;
-    filter: brightness(40%);
+    filter: brightness(10%);
 }
 .hero-action {
     display: flex;
