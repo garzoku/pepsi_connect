@@ -94,7 +94,7 @@ a:hover {
 }
 .image-mask {
     position: absolute;
-    background-color: hsla(349, 20%, 10%, 0.6);
+    background-color: hsla(349, 20%, 10%, 0.7);
     top:0;
     right:0;
     bottom:0;
