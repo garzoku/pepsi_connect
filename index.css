@@ -7,6 +7,7 @@ body {
 }
 header {
     font-weight: 700;
+    font-size: 18px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -92,22 +93,31 @@ a {
 a:hover {
     color:#a9a9ad;
 }
+.image-mask {
+    position: absolute;
+    background-color: rgba(255, 60, 47, 0.36);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 10;
+
+}
 .hero {
     display: flex;
     position: relative;
 }  
 .heroimage {
     width: 100%;
-    height: auto;
-    filter: brightness(50%);
 }
 .hero-action {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top:75%;
+    top:70%;
     width: 100%;
+    z-index:20;
 }
 @media only screen and (max-width: 700px) {
     .hero-action {
@@ -116,7 +126,7 @@ a:hover {
 }
 h1 {
     font-weight: 700;
-    font-size: xx-large;
+    font-size: 42px;
     color: #ffffff;
 }
 @media only screen and (max-width: 700px) {
@@ -127,12 +137,13 @@ h1 {
 }
 
 .hero a {
-    margin-top: 24px;
+    margin-top: 50px;
     background-color: hsl(209, 100%, 38%);
-    padding: 12px 18px;
+    padding: 16px 20px;
     font-weight: 700;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 24px;
+    border: 4px solid #ffffff;
 }
 @media only screen and (max-width: 700px) {
     .hero a {
@@ -146,13 +157,13 @@ main {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
-    column-gap: 250px;
-    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 200px;
+    /*row-gap: 50px;*/
     padding:48px 48px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 @media only screen and (max-width: 700px) {
     .grid-container {
