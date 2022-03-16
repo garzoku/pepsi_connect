@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
+@keyframes white-to-blue {
+    from {background-color: hsl(0, 0%, 100%);}
+    to {background-color: hsl(209, 100%, 38%);}
+}
+@keyframes blue-to-white {
+    from {background-color: hsl(209, 100%, 38%);}
+    to {background-color: hsl(0, 0%, 100%);}
+}
+
 body {
     color: #ffffff;
     font-family: 'Archivo', sans-serif;
@@ -80,6 +89,10 @@ li + li {
     font-weight: 500;
     justify-content: center;
 }
+.action a:hover {
+    animation-name: blue-to-white;
+    animation-duration: 1s;
+  }
 @media only screen and (max-width: 750px) {
     .action a {
         padding: 10px 16px;
@@ -147,6 +160,10 @@ h1 {
     border: 4px solid #ffffff;
     box-shadow: 6px 4px 4px black;
 }
+.hero a:hover {
+    animation-name: white-to-blue;
+    animation-duration: 1s;
+  }
 @media only screen and (max-width: 750px) {
     .hero a {
         margin-top: 12px;
@@ -251,3 +268,7 @@ h2 {
     font-size: 18px;
     box-shadow: 8px 4px 4px black;
 }
+.grid-container a:hover {
+    animation-name: blue-to-white;
+    animation-duration: 1s;
+  }
