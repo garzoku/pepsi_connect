@@ -94,7 +94,7 @@ a:hover {
 }
 .image-mask {
     position: absolute;
-    background-color: hsla(209, 15%, 10%, 0.7);
+    background-color: hsla(209, 15%, 10%, 0.8);
     top:0;
     right:0;
     bottom:0;
@@ -106,10 +106,10 @@ a:hover {
     display: flex;
     position: relative;
     border-bottom: 8px solid #ffffff;
+    background-color: #292b2d;
 }  
 .heroimage {
     width: 100%;
-    filter: contrast(50%)
 }
 .hero-action {
     display: flex;
